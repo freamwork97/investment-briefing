@@ -1,0 +1,79 @@
+site_name: 투자 브리핑
+docs_dir: docs
+site_dir: ../investment-briefing-site
+site_description: 글로벌 시황 & 국장 트레이딩 데일리 브리핑
+site_url: https://freamwork97.github.io/investment-briefing/
+repo_url: https://github.com/freamwork97/investment-briefing
+repo_name: freamwork97/investment-briefing
+edit_uri: edit/main/
+
+theme:
+  name: material
+  language: ko
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-sunny
+        name: 라이트 모드
+    - scheme: slate
+      primary: indigo
+      accent: light blue
+      toggle:
+        icon: material/weather-night
+        name: 다크 모드
+  features:
+    - navigation.instant
+    - navigation.indexes
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - search.share
+
+plugins:
+  - search:
+      lang: ko
+  - roamlinks  # Obsidian [[wikilinks]] 지원
+
+markdown_extensions:
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.highlight
+  - pymdownx.superfences
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - tables
+  - admonition
+
+nav:
+  - 🏠 홈: index.md
+  - 🌍 글로벌 시황:
+      - briefings/index.md
+      - briefings/2026-05-14.md
+      - briefings/2026-05-13.md
+      - briefings/2026-05-12.md
+      - briefings/2026-05-09.md
+      - briefings/2026-05-08.md
+      - briefings/2026-05-07.md
+      - briefings/2026-05-06.md
+      - briefings/2026-05-05.md
+      - briefings/2026-05-02.md
+      - briefings/2026-05-01.md
+      - briefings/2026-04-30.md
+      - briefings/2026-04-29.md
+      - briefings/2026-04-28.md
+      - briefings/2026-04-27.md
+      - briefings/2026-04-26.md
+  - 🇰🇷 국장 트레이딩:
+      - watchlist/index.md
+      - watchlist/2026-05-13.md
+      - watchlist/2026-05-12.md
+      - watchlist/2026-05-11.md
+      - watchlist/2026-05-08.md
+      - watchlist/2026-05-07.md
+      - watchlist/2026-05-06.md
+      - watchlist/2026-05-05.md
+      - watchlist/2026-05-04.md
+      - watchlist/2026-05-01.md
