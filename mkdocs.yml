@@ -32,6 +32,7 @@ theme:
     - search.share
 
 plugins:
+  - awesome-pages
   - search:
       lang: ko
   - roamlinks  # Obsidian [[wikilinks]] 지원
@@ -49,31 +50,4 @@ markdown_extensions:
 
 nav:
   - 🏠 홈: index.md
-  - 🌍 글로벌 시황:
-      - briefings/index.md
-      - briefings/2026-05-14.md
-      - briefings/2026-05-13.md
-      - briefings/2026-05-12.md
-      - briefings/2026-05-09.md
-      - briefings/2026-05-08.md
-      - briefings/2026-05-07.md
-      - briefings/2026-05-06.md
-      - briefings/2026-05-05.md
-      - briefings/2026-05-02.md
-      - briefings/2026-05-01.md
-      - briefings/2026-04-30.md
-      - briefings/2026-04-29.md
-      - briefings/2026-04-28.md
-      - briefings/2026-04-27.md
-      - briefings/2026-04-26.md
-  - 🇰🇷 국장 트레이딩:
-      - watchlist/index.md
-      - watchlist/2026-05-13.md
-      - watchlist/2026-05-12.md
-      - watchlist/2026-05-11.md
-      - watchlist/2026-05-08.md
-      - watchlist/2026-05-07.md
-      - watchlist/2026-05-06.md
-      - watchlist/2026-05-05.md
-      - watchlist/2026-05-04.md
-      - watchlist/2026-05-01.md
+  - ...
