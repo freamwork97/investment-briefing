@@ -25,6 +25,26 @@ jobs:
         run: |
           pip install mkdocs-material mkdocs-awesome-pages-plugin mkdocs-roamlinks-plugin
 
+      - name: Generate index pages
+        run: |
+          python3 - <<'EOF'
+          import os, re
+          from pathlib import Path
+
+          def generate_index(docs_dir, title, emoji):
+              files = sorted(
+                  [f for f in Path(docs_dir).glob("*.md") if f.stem != "index"],
+                  reverse=True
+              )
+              lines = [f"# {emoji} {title} 목록\n"]
+              for f in files:
+                  lines.append(f"- [{f.stem}]({f.name})")
+              Path(docs_dir, "index.md").write_text("\n".join(lines) + "\n")
+
+          generate_index("docs/briefings", "글로벌 시황 브리핑", "🌍")
+          generate_index("docs/watchlist", "국장 트레이딩 브리핑", "🇰🇷")
+          EOF
+
       - name: Deploy to GitHub Pages
         run: |
           mkdocs gh-deploy --force
