@@ -11,15 +11,15 @@ theme:
   name: material
   language: ko
   palette:
-    - scheme: default
-      primary: indigo
-      accent: indigo
+    - scheme: slate
+      primary: black
+      accent: teal
       toggle:
         icon: material/weather-sunny
         name: 라이트 모드
-    - scheme: slate
+    - scheme: default
       primary: indigo
-      accent: light blue
+      accent: teal
       toggle:
         icon: material/weather-night
         name: 다크 모드
@@ -30,6 +30,9 @@ theme:
     - search.suggest
     - search.highlight
     - search.share
+
+extra_css:
+  - stylesheets/custom.css
 
 plugins:
   - awesome-pages
