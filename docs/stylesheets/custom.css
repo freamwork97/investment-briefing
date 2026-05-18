@@ -1,0 +1,134 @@
+/* Finance Pro — Navy + Emerald */
+
+:root,
+[data-md-color-scheme="slate"] {
+  --md-primary-fg-color:        #1a1a2e;
+  --md-primary-fg-color--light: #16213e;
+  --md-primary-fg-color--dark:  #0d1117;
+  --md-primary-bg-color:        #e0f2f1;
+  --md-accent-fg-color:         #00e676;
+  --md-accent-fg-color--transparent: rgba(0, 230, 118, 0.1);
+
+  --md-default-bg-color:        #1a1a2e;
+  --md-default-fg-color:        #cfd8dc;
+  --md-default-fg-color--light: #90a4ae;
+  --md-default-fg-color--lighter: #546e7a;
+  --md-default-fg-color--lightest: #37474f;
+
+  --md-code-bg-color:           #0f3460;
+  --md-code-fg-color:           #e0f2f1;
+}
+
+/* Header */
+.md-header {
+  background: #0d1b2a;
+  box-shadow: 0 2px 8px rgba(0, 230, 118, 0.1);
+}
+
+.md-header__title {
+  color: #ffffff;
+  font-weight: 700;
+}
+
+/* Nav sidebar */
+.md-nav--primary .md-nav__title {
+  background: #0d1b2a;
+  color: #4dd0e1;
+}
+
+.md-sidebar--primary {
+  background: #0d1b2a;
+}
+
+.md-nav__item .md-nav__link {
+  color: #90a4ae;
+}
+
+.md-nav__item .md-nav__link:hover {
+  color: #00e676;
+}
+
+.md-nav__item--active > .md-nav__link {
+  color: #00e676;
+  font-weight: 600;
+}
+
+.md-nav__item--active > .md-nav__link::before {
+  background: #00e676;
+}
+
+/* Table of contents */
+.md-sidebar--secondary {
+  background: #1a1a2e;
+}
+
+.md-nav--secondary .md-nav__link {
+  color: #78909c;
+}
+
+.md-nav--secondary .md-nav__link:hover,
+.md-nav--secondary .md-nav__link--active {
+  color: #00e676;
+}
+
+/* Content area */
+.md-content {
+  background: #1a1a2e;
+}
+
+.md-typeset h1,
+.md-typeset h2,
+.md-typeset h3 {
+  color: #00e676;
+}
+
+.md-typeset a {
+  color: #4dd0e1;
+}
+
+.md-typeset a:hover {
+  color: #00e676;
+}
+
+/* Code blocks */
+.md-typeset code {
+  background: #0f3460;
+  color: #80cbc4;
+}
+
+/* Tables */
+.md-typeset table th {
+  background: #0f3460;
+  color: #00e676;
+}
+
+.md-typeset table tr:nth-child(even) {
+  background: rgba(15, 52, 96, 0.4);
+}
+
+/* Admonitions */
+.md-typeset .admonition {
+  border-left-color: #00e676;
+  background: rgba(0, 230, 118, 0.05);
+}
+
+/* Search */
+.md-search__input {
+  background: #0f3460;
+  color: #e0f2f1;
+}
+
+/* Footer */
+.md-footer {
+  background: #0d1b2a;
+}
+
+.md-footer-meta {
+  background: #060f1a;
+}
+
+/* Tag chips */
+.md-tag {
+  background: #0f3460;
+  color: #00e676;
+}
